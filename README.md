@@ -6,7 +6,8 @@ A simple and small project to understand how Docker works and to be used as a te
     git clone https://github.com/tstaerk/docker-hello-world
     cd docker-hello-world
     docker build -t hellocontainer .
-    docker run -d --name helloservice hellocontainer
+    docker run -d --name webservice -p 8080:80 hellocontainer
+    wget localhost:8080
 
 # docker cheat sheet
 docker ps -> find out what containers are running
