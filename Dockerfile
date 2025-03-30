@@ -5,5 +5,4 @@ RUN apt-get update && \
 
 RUN echo "hello moon">/var/www/html/index.nginx-debian.html
 
-EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
