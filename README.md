@@ -3,6 +3,7 @@ A simple and small project to understand how Docker works and to be used as a te
 
 # QuickStart
     sudo su -
+    apt install docker.io
     git clone https://github.com/tstaerk/docker-hello-world
     cd docker-hello-world
     docker build -t hellocontainer .
